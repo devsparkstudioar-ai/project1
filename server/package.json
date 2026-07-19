@@ -6,8 +6,8 @@
   "description": "PostgreSQL-backed API server for the METRO Courier & Logistics app",
   "scripts": {
     "dev": "node --watch src/index.js",
-    "start": "node src/index.js",
-    "migrate": "node src/migrate.js"
+    "migrate": "node src/migrate.js",
+    "start": "npm run migrate && node src/index.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
